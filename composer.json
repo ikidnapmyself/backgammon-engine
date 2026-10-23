@@ -1,0 +1,32 @@
+{
+    "name": "backgammon-network/engine",
+    "description": "A framework-free PHP backgammon engine: board, legal moves, dice and a match table state machine. Build and test backgammon bots.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["backgammon", "game", "bot", "engine", "board-game"],
+    "homepage": "https://backgammon.network",
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BackgammonNetwork\\Engine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "files": ["tests/Support/helpers.php"]
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable"
+}
